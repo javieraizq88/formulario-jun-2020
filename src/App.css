@@ -110,7 +110,8 @@ body{
 
 /* pregunta 1 */
 
-#pregunta1{
+#pregunta1,
+#pregunta2{
   margin-left: 150px;
   margin-right: 20px;
   font-size: 22px;
@@ -126,11 +127,14 @@ body{
 
 /* preguta 2 */
 
-#pregunta{
-  margin-left: 230px;
-  margin-right: 20px;
-  font-size: 22px;
+#edad{
+  margin-left: 2px;
+  width: 200px;
+  height: 34px;
+  font-size: 20px;
+  padding-left: 20px;
 }
+
 
 
 
