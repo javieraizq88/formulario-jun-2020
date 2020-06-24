@@ -111,7 +111,8 @@ body{
 /* pregunta 1 */
 
 #pregunta1,
-#pregunta2{
+#pregunta2,
+#pregunta3{
   margin-left: 150px;
   margin-right: 20px;
   font-size: 22px;
@@ -135,11 +136,6 @@ body{
   padding-left: 20px;
 }
 
-
-
-
-
-
 /* pregunta 3 */
 
 #opciones-resp{
@@ -154,4 +150,52 @@ body{
 #adidas,
 #puma{
   margin-right: 15px;
+}
+
+#boton-siguiente3{
+  margin-top: 54px;
+  margin-right: 60px; 
+  background-color: rgb(68, 78, 211);
+  color: white;
+  font-size: 18px;
+  border: rgb(62, 187, 62);
+  height: 35px;
+  width: 120px;
+  float: right;
+}
+
+#boton-siguiente3:hover{
+  margin-top: 54px;
+  margin-right: 50px; 
+  background-color: rgb(69, 74, 156);
+  color: white;
+  font-size: 18px;
+  border: rgb(62, 187, 62);
+  height: 40px;
+  width: 140px;
+  float: right;
+}
+
+#boton-volver3{
+  margin-top: 54px;
+  margin-left: 60px;
+  background-color: rgb(62, 187, 62);
+  color: white;
+  font-size: 18px;
+  border: rgb(62, 187, 62);
+  height: 35px;
+  width: 100px;
+  float: left;
+}
+
+#boton-volver3:hover{
+  margin-top: 54px;
+  margin-left: 50px;
+  background-color: rgb(68, 146, 68);
+  color: white;
+  font-size: 18px;
+  border: rgb(62, 187, 62);
+  height: 40px;
+  width: 120px;
+  float: left;
 }
