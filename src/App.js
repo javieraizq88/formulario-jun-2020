@@ -5,6 +5,7 @@ import Formulario1 from './1';
 import Preg2 from './2';
 import Preg3 from './3';
 import Home from './home';
+import Preg4 from './4';
 
 const App = props => {
 
@@ -16,6 +17,7 @@ const App = props => {
         <Route exact path="/pregunta1" component={Formulario1} />
         <Route exact path="/pregunta2" component={Preg2} />
         <Route exact path="/pregunta3" component={Preg3} />
+        <Route exact path="/pregunta4" component={Preg4} />
       </Switch>
     </BrowserRouter>
 

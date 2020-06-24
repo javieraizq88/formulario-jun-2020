@@ -4,6 +4,7 @@ const getState = ({ getStore, getAction, setStore }) => {
             respuesta1: null,
             respuesta2: null,
             respuesta3: null,
+            respuesta4: null,
         },
 
         actions: {

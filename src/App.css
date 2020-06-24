@@ -1,5 +1,5 @@
 body{
-  background-color: firebrick;
+  background-color: rgb(241, 193, 165);
 }
 
 #container{
@@ -138,11 +138,14 @@ body{
 
 /* pregunta 3 */
 
-#opciones-resp{
+#opciones-resp,
+#buena{
   margin-top: 10px;
   margin-left: 60px;
 }
-#opciones-resp2{
+#opciones-resp2,
+#niBuenaNiMala, 
+#mala{
   margin-left: 60px;
 }
 
@@ -150,6 +153,32 @@ body{
 #adidas,
 #puma{
   margin-right: 25px;
+}
+
+
+
+#boton-volver3{
+  margin-top: 54px;
+  margin-left: 60px;
+  background-color: rgb(62, 187, 62);
+  color: white;
+  font-size: 18px;
+  border: rgb(62, 187, 62);
+  height: 35px;
+  width: 100px;
+  float: left;
+}
+
+#boton-volver3:hover{
+  margin-top: 54px;
+  margin-left: 50px;
+  background-color: rgb(68, 146, 68);
+  color: white;
+  font-size: 18px;
+  border: rgb(62, 187, 62);
+  height: 40px;
+  width: 120px;
+  float: left;
 }
 
 #boton-siguiente3{
@@ -176,8 +205,17 @@ body{
   float: right;
 }
 
-#boton-volver3{
-  margin-top: 54px;
+/* pregunta 4 */
+
+#buena1,
+#niBuenaNiMala1,
+#mala1{
+padding-left: 15px;
+}
+
+
+#boton-volver4{
+  margin-top: 84px;
   margin-left: 60px;
   background-color: rgb(62, 187, 62);
   color: white;
@@ -185,11 +223,11 @@ body{
   border: rgb(62, 187, 62);
   height: 35px;
   width: 100px;
-  float: left;
+  float: lef;
 }
 
-#boton-volver3:hover{
-  margin-top: 54px;
+#boton-volver4:hover{
+  margin-top: 84px;
   margin-left: 50px;
   background-color: rgb(68, 146, 68);
   color: white;
@@ -198,4 +236,27 @@ body{
   height: 40px;
   width: 120px;
   float: left;
+}
+#boton-finalizar{
+  margin-top: 84px;
+  margin-right: 60px; 
+  background-color: rgb(236, 25, 25);
+  color: white;
+  font-size: 18px;
+  border: rgb(62, 187, 62);
+  height: 35px;
+  width: 120px;
+  float: right;
+}
+
+#boton-finalizar:hover{
+  margin-top: 84px;
+  margin-right: 50px; 
+  background-color: rgb(175, 25, 25);
+  color: white;
+  font-size: 18px;
+  border: rgb(62, 187, 62);
+  height: 40px;
+  width: 140px;
+  float: right;
 }
