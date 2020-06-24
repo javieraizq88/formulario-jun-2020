@@ -3,21 +3,43 @@ body{
 }
 
 #container{
-margin-left: 120px;
-margin-right: 120px;
+margin-left: 250px;
+margin-right: 250px;
 margin-top: 40px;
 padding-top: 10px;
 padding-bottom: 50px;
 background-color: white;
 }
 
+#parte-superior{
+  margin-top: 30px;
+  display: inline-flex;
+}
+
 #titulo{
-  text-align: center;
-  margin-bottom: 40px;
+   margin-left: 120px;
+}
+
+#logo-cadem{
+  width: 15%;
+  height: 10%;
+  margin-left: 40px;
+  margin-top: 12px;
+}
+
+#boton-inicio{
+  margin-left: 480px;
+}
+
+#subtitulo{
+  margin-top: 50px;
+  margin-left: 90px;
+  margin-bottom: 25px;
+  font-size: 22px;
 }
 
 #pregunta{
-  margin-left: 150px;
+  margin-left: 230px;
   margin-right: 20px;
   font-size: 22px;
 }
@@ -32,11 +54,27 @@ background-color: white;
 
 #boton-siguiente{
   margin-top: 20px;
-  margin-left: 900px;
+  margin-left: 600px;
   background-color: rgb(62, 187, 62);
   color: white;
-  font-size: 15px;
+  font-size: 18px;
   border: rgb(62, 187, 62);
-  height: 29px;
+  height: 35px;
   width: 100px;
+}
+
+/* pregunta 3 */
+
+#opciones-resp{
+  margin-top: 10px;
+  margin-left: 50px;
+}
+#opciones-resp2{
+  margin-left: 50px;
+}
+
+#nike,
+#adidas,
+#puma{
+  margin-right: 15px;
 }
