@@ -1,263 +1,137 @@
-body{
-  background-color: rgb(241, 193, 165);
+body {
+    background: rgb(241, 193, 165) !important;
 }
 
-#container{
-  margin-left: 250px;
-  margin-right: 250px;
-  margin-top: 30px;
-  padding-bottom: 50px;
-  background-color: white;
-  height: 500px;
-}
+#container1{
+    margin-top: 50px;
+    background-color: white;
+    height: 600px; 
+  }
 
 #parte-superior{
-  margin-top: 30px;
-  display: inline-flex;
-}
+    margin-top: 15px;
+    margin-bottom: 40px;
+    display: inline-flex;
+  }
 
 #titulo{
-   margin-left: 120px;
-}
+    margin-left: 150px;
+ }
 
 #logo-cadem{
-  width: 15%;
-  height: 10%;
-  margin-left: 40px;
-  margin-top: 12px;
+    width: 15%;
+    height: 10%;
+    margin-left: 40px;
+  }
+
+/* home */
+
+  #subtitulo-home{
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+#boton-home{
+    margin-left: 500px;
+}
+#boton-home:hover{
+    margin-left: 495px;
+}
+    
+#boton-home button{
+    margin-top: 70px;
+    background: rgb(68, 78, 211);
+    color: white;
+    font-size: 20px;
+    border: 0 ;
+    width: 260px;
+    height: 60px;
+}
+#boton-home button:hover{
+    background: rgb(69, 74, 156);
+    color: white;
+    font-size: 22px;
+    border: 0 ;
+    width: 270px;
+    height: 65px;
 }
 
-#subtitulo-inicio{
-  margin-top: 70px;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-#boton-inicio{
-  margin-top: 35px;
-  margin-left: 430px;
-  background: rgb(68, 78, 211);
-  color: white;
-  font-size: 20px;
-  border: 0 ;
-  width: 260px;
-  height: 60px;
-}
-
-#boton-inicio:hover{
-  margin-left: 425px;
-  background: rgb(69, 74, 156);
-  color: white;
-  font-size: 20px;
-  border: 0 ;
-  width: 270px;
-  height: 65px;
-}
-
-#subtitulo{
-  margin-top: 50px;
-  margin-left: 90px;
-  margin-bottom: 25px;
-  font-size: 22px;
-}
-
-#boton-siguiente{
-  margin-top: 170px;
-  margin-right: 60px; 
-  background-color: rgb(68, 78, 211);
-  color: white;
-  font-size: 18px;
-  border: rgb(62, 187, 62);
-  height: 35px;
-  width: 120px;
-  float: right;
-}
-
-#boton-siguiente:hover{
-  margin-top: 170px;
-  margin-right: 50px; 
-  background-color: rgb(69, 74, 156);
-  color: white;
-  font-size: 18px;
-  border: rgb(62, 187, 62);
-  height: 40px;
-  width: 140px;
-  float: right;
-}
+/* botones */
 
 #boton-volver{
-  margin-top: 170px;
-  margin-left: 60px;
-  background-color: rgb(62, 187, 62);
-  color: white;
-  font-size: 18px;
-  border: rgb(62, 187, 62);
-  height: 35px;
-  width: 100px;
-  float: left;
+    margin-top: 170px;
+    margin-left: 60px;
+    background-color: rgb(62, 187, 62);
+    color: white;
+    font-size: 18px;
+    border: rgb(62, 187, 62);
+    height: 45px;
+    width: 120px;
+    float: left;
 }
 
 #boton-volver:hover{
-  margin-top: 170px;
-  margin-left: 50px;
-  background-color: rgb(68, 146, 68);
-  color: white;
-  font-size: 18px;
-  border: rgb(62, 187, 62);
-  height: 40px;
-  width: 120px;
-  float: left;
+    margin-top: 168px;
+    margin-left: 50px; 
+    background-color: rgb(68, 146, 68);
+    color: white;
+    font-size: 18.5px;
+    border: rgb(62, 187, 62);
+    height: 50px;
+    width: 140px;
+    float: left;
 }
 
-/* pregunta 1 */
+#boton-siguiente{
+    margin-top: 170px;
+    margin-right: 60px; 
+    background-color: rgb(68, 78, 211);
+    color: white;
+    font-size: 18px;
+    border: rgb(62, 187, 62);
+    height: 45px;
+    width: 120px;
+    float: right;
+  }
+  
+  #boton-siguiente:hover{
+    margin-top: 168px;
+    margin-right: 50px; 
+    background-color: rgb(69, 74, 156);
+    color: white;
+    font-size: 18.5px;
+    border: rgb(62, 187, 62);
+    height: 50px;
+    width: 140px;
+    float: right;
+  }
+
+/* preguntas */
+
+#subtitulo{
+      margin-top: 50px;
+      margin-left: 90px;
+      margin-bottom: 25px;
+      font-size: 22px;
+    }
 
 #pregunta1,
 #pregunta2,
 #pregunta3{
-  margin-left: 250px;
-  margin-right: 20px;
+    margin-top: 30px;
+text-align: center;
   font-size: 22px;
 }
+    
+/* pregunta 1 */
+
 
 #nombre{
-  margin-left: 2px;
-  width: 500px;
-  height: 34px;
-  font-size: 20px;
-  padding-left: 20px;
-}
-
-/* preguta 2 */
-
-#edad{
-  margin-left: 2px;
-  width: 200px;
-  height: 34px;
-  font-size: 20px;
-  padding-left: 20px;
-}
-
-/* pregunta 3 */
-
-#opciones-resp,
-#buena{
-  margin-top: 10px;
-  margin-left: 60px;
-}
-#opciones-resp2,
-#niBuenaNiMala, 
-#mala{
-  margin-left: 60px;
-}
-
-#nike,
-#adidas,
-#puma{
-  margin-right: 25px;
-}
-
-
-
-#boton-volver3{
-  margin-top: 54px;
-  margin-left: 60px;
-  background-color: rgb(62, 187, 62);
-  color: white;
-  font-size: 18px;
-  border: rgb(62, 187, 62);
-  height: 35px;
-  width: 100px;
-  float: left;
-}
-
-#boton-volver3:hover{
-  margin-top: 54px;
-  margin-left: 50px;
-  background-color: rgb(68, 146, 68);
-  color: white;
-  font-size: 18px;
-  border: rgb(62, 187, 62);
-  height: 40px;
-  width: 120px;
-  float: left;
-}
-
-#boton-siguiente3{
-  margin-top: 54px;
-  margin-right: 60px; 
-  background-color: rgb(68, 78, 211);
-  color: white;
-  font-size: 18px;
-  border: rgb(62, 187, 62);
-  height: 35px;
-  width: 120px;
-  float: right;
-}
-
-#boton-siguiente3:hover{
-  margin-top: 54px;
-  margin-right: 50px; 
-  background-color: rgb(69, 74, 156);
-  color: white;
-  font-size: 18px;
-  border: rgb(62, 187, 62);
-  height: 40px;
-  width: 140px;
-  float: right;
-}
-
-/* pregunta 4 */
-
-#buena1,
-#niBuenaNiMala1,
-#mala1{
-padding-left: 15px;
-}
-
-
-#boton-volver4{
-  margin-top: 84px;
-  margin-left: 60px;
-  background-color: rgb(62, 187, 62);
-  color: white;
-  font-size: 18px;
-  border: rgb(62, 187, 62);
-  height: 35px;
-  width: 100px;
-  float: lef;
-}
-
-#boton-volver4:hover{
-  margin-top: 84px;
-  margin-left: 50px;
-  background-color: rgb(68, 146, 68);
-  color: white;
-  font-size: 18px;
-  border: rgb(62, 187, 62);
-  height: 40px;
-  width: 120px;
-  float: left;
-}
-#boton-finalizar{
-  margin-top: 84px;
-  margin-right: 60px; 
-  background-color: rgb(236, 25, 25);
-  color: white;
-  font-size: 18px;
-  border: rgb(62, 187, 62);
-  height: 35px;
-  width: 120px;
-  float: right;
-}
-
-#boton-finalizar:hover{
-  margin-top: 84px;
-  margin-right: 50px; 
-  background-color: rgb(175, 25, 25);
-  color: white;
-  font-size: 18px;
-  border: rgb(62, 187, 62);
-  height: 40px;
-  width: 140px;
-  float: right;
-}
+    margin-top: 30px;
+    margin-left: 2px;
+    width: 500px;
+    height: 34px;
+    font-size: 20px;
+    padding-left: 20px;
+  }

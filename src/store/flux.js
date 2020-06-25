@@ -1,13 +1,21 @@
 const getState = ({ getStore, getAction, setStore }) => {
     return {
         store: {
-            respuesta1: null,
-            respuesta2: null,
             respuesta3: null,
             respuesta4: null,
+            name: "",
+            age: "",
         },
 
         actions: {
+
+            handleChange: e => {
+                setStore ({
+                    [e.target.name]: e.target.value
+                })
+            },
+
+
             // getRespuesta1: () => {
             //     fetch(store, {
             //         method: "GET",
@@ -25,39 +33,8 @@ const getState = ({ getStore, getAction, setStore }) => {
             //     })
             // },
 
-            getFilms: url => {
-                fetch(url, {
-                    method: "GET",
-                    headers:{
-                        "Content-Type": "application/json"
-                    }
-                })
-                .then(resp => resp.json())
-                .then(data => {
-                    setStore({
-                        films: data
-                    });
-                }).catch(error => {
-                    console.log(error)
-                })
-            },
 
-            getStarships: url => {
-                fetch(url, {
-                    method: "GET",
-                    headers:{
-                        "Content-Type": "application/json"
-                    }
-                }) 
-                .then(resp => resp.json())
-                .then(data => {
-                    setStore({
-                        starships: data
-                    });
-                }).catch(error => {
-                    console.log(error)
-                })
-            },
+
 
             getVehicles: url => {
                 fetch(url, {

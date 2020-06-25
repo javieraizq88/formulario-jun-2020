@@ -19,7 +19,8 @@ const injectContext = PassedComponent => {
         }
 
         componentDidMount() {
-[]        }
+
+        }
         render() {
             return (
                 <Context.Provider value={this.state}>
