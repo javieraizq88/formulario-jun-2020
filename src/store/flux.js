@@ -1,10 +1,10 @@
 const getState = ({ getStore, getAction, setStore }) => {
     return {
         store: {
-            respuesta3: null,
-            respuesta4: null,
             name: "",
             age: "",
+            answer3: null,
+            answer4: null,
         },
 
         actions: {
@@ -14,6 +14,8 @@ const getState = ({ getStore, getAction, setStore }) => {
                     [e.target.name]: e.target.value
                 })
             },
+
+
 
 
             // getRespuesta1: () => {

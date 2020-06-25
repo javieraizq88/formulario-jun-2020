@@ -127,7 +127,8 @@ text-align: center;
 /* pregunta 1 */
 
 
-#nombre{
+#name,
+#age{
     margin-top: 30px;
     margin-left: 2px;
     width: 500px;

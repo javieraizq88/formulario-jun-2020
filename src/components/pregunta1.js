@@ -28,7 +28,7 @@ const Pregunta1 = props => {
                                         </div>
                                         <div className="card-group">
                                             <label
-                                            className="col-md-4 col-xs-4"
+                                                className="col-md-4 col-xs-4"
                                                 id="pregunta1"
                                                 for="nombre">
                                                 ¿Cuál es tu nombre?
@@ -37,8 +37,8 @@ const Pregunta1 = props => {
                                                 type="text"
                                                 className="col-md-5 form-control"
                                                 name="name"
-                                                id="nombre"
-                                                placeholder="Nombre y Apellido"
+                                                id="name"
+                                                placeholder="Escribe tu Nombre y Apellido"
                                                 onChange={(e) => { actions.handleChange(e) }}
                                                 value={store.name}
                                             />
@@ -59,17 +59,31 @@ const Pregunta1 = props => {
                                             className="btn btn-success float-left">
                                             Volver
                                         </button>
-                                        <Link
-                                            to="/pregunta2"
-                                        ><button
-                                            id="boton-siguiente"
-                                            type="button"
-                                            className="btn btn-success">
-                                                Siguiente
-                                        </button>
-                                        </Link>
-                                    </div>
 
+                                        {/* renderizado validando el ingreso de datos en nombre */}
+                                        {
+                                            store.name &&
+                                                store.name ?
+                                                <Link
+                                                    to="/pregunta2">
+                                                    <button
+                                                        id="boton-siguiente"
+                                                        type="button"
+                                                        className="btn btn-success">
+                                                        Siguiente
+                                                    </button>
+                                                </Link>
+                                                :
+                                                <button
+                                                    id="boton-siguiente"
+                                                    type="button"
+                                                    className="btn btn-success disabled">
+                                                    Siguiente
+                                                </button>
+
+                                        }
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
