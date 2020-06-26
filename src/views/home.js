@@ -12,7 +12,10 @@ const Home = props => {
                 <div className="card-body col-md-10 col-xs-10"
                     id="container1">
                     <Header />
-                    <h2 id="subtitulo-home" >Para inicar la encuesta, haz click en el siguiente botón</h2>
+                    <h2
+                        id="subtitulo-home">
+                        Para inicar la encuesta, haz click en el siguiente botón
+                        </h2>
                     <Link
                         id="boton-home"
                         to="/pregunta1">

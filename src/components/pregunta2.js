@@ -25,10 +25,6 @@ const Pregunta2 = props => {
                             <div className="row">
                                 <div className="col">
                                     <form id="loginForm">
-                                        <div id="error"
-                                            className=""
-                                            role="alert">
-                                        </div>
                                         <div className="card-group">
                                             <label
                                                 className="col-md-4 col-xs-4"
@@ -47,9 +43,7 @@ const Pregunta2 = props => {
                                             />
                                             <br />
                                         </div>
-                                    </form>
-
-
+                                    </form> {/* fin del formulario */}
 
                                     {/* botones */}
                                     <div
@@ -68,13 +62,13 @@ const Pregunta2 = props => {
                                             store.age &&
                                                 store.age ?
                                                 <Link
-                                                    to="/pregunta2">
+                                                    to="/pregunta3">
                                                     <button
                                                         id="boton-siguiente"
                                                         type="button"
                                                         className="btn btn-success">
                                                         Siguiente
-         </button>
+                                                    </button>
                                                 </Link>
                                                 :
                                                 <button
@@ -85,12 +79,12 @@ const Pregunta2 = props => {
                                                 </button>
                                         }
 
-                                    </div>
+                                    </div> {/* fin de botones */}
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                </div>{/* fin col */}
+                            </div>{/* fin row */}
+                        </div>{/* fin container */}
+                    </div>{/* fin contenido pregunta 2 */}
                 </div>
             </div>
         </div>
