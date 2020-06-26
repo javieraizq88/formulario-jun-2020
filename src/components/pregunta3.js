@@ -26,27 +26,28 @@ const Pregunta3 = props => {
                             <div className="row">
                                 <div className="col">
                                     <form id="loginForm">
-                                        <div className="card-group" id="pregunta3">
+                                        <div id="pregunta3">
                                             <label
-                                                className="col-md-4 col-xs-4"
+                                            className="col-md-5 col-xs-5"
                                                 for="marca">
                                                 ¿Cuál de las siguientes marcas conoces?
                                         </label>
 
                                             {/* opcion 1 = Nike */}
                                             <div
-                                                class="custom-control custom-switch"
+                                                className="custom-control custom-switch" 
                                                 id="opciones-resp">
                                                 <input
                                                     type="checkbox"
-                                                    class="custom-control-input"
+                                                    className="custom-control-input"
                                                     name="nike"
                                                     id="nike"
                                                     onClick={(e) => { actions.cambiarCheckbox(e) }}
                                                     value="nike"
+                                                    
                                                 />
                                                 <label
-                                                    class="custom-control-label"
+                                                    className="custom-control-label"
                                                     for="nike">
                                                     Nike
                                                 </label>
@@ -54,18 +55,18 @@ const Pregunta3 = props => {
 
                                             {/* Opción 2 = Adidas */}
                                             <div
-                                                class="custom-control custom-switch"
+                                                className="custom-control custom-switch"
                                                 id="opciones-resp">
                                                 <input
                                                     type="checkbox"
-                                                    class="custom-control-input"
+                                                    className="custom-control-input"
                                                     name="adidas"
                                                     id="adidas"
                                                     onClick={(e) => { actions.cambiarCheckbox(e) }}
                                                     value="adidas"
                                                 />
                                                 <label
-                                                    class="custom-control-label"
+                                                    className="custom-control-label"
                                                     for="adidas">
                                                     Adidas
                                                 </label>
@@ -73,18 +74,18 @@ const Pregunta3 = props => {
 
                                             {/* Opción 3 = Puma */}
                                             <div
-                                                class="custom-control custom-switch"
+                                                className="custom-control custom-switch"
                                                 id="opciones-resp">
                                                 <input
                                                     type="checkbox"
-                                                    class="custom-control-input"
+                                                    className="custom-control-input"
                                                     name="puma"
                                                     id="puma"
                                                     onClick={(e) => { actions.cambiarCheckbox(e) }}
                                                     value="puma"
                                                 />
                                                 <label
-                                                    class="custom-control-label"
+                                                    className="custom-control-label"
                                                     for="puma">
                                                     Puma
                                                 </label>
@@ -100,7 +101,7 @@ const Pregunta3 = props => {
                                         className=""
                                         id="botones">
                                         <button
-                                            id="boton-volver"
+                                            id="boton-volver-preg3"
                                             type="button"
                                             onClick={() => history.goBack()}
                                             className="btn btn-success float-left">
@@ -109,12 +110,12 @@ const Pregunta3 = props => {
 
                                         {/* renderizado validando marcar por lo menos 1 opcion*/}
                                         {
-                                            store.puma || store.nike || store.adidas &&
-                                            store.puma || store.nike || store.adidas ?
+                                            store.marca  &&
+                                            store.marca ?
                                                 <Link
                                                     to="/pregunta4">
                                                     <button
-                                                        id="boton-siguiente"
+                                                        id="boton-siguiente-preg3"
                                                         type="button"
                                                         className="btn btn-success">
                                                         Siguiente
@@ -122,7 +123,7 @@ const Pregunta3 = props => {
                                                 </Link>
                                                 :
                                                 <button
-                                                    id="boton-siguiente"
+                                                    id="boton-siguiente-preg3"
                                                     type="button"
                                                     className="btn btn-success disabled">
                                                     Siguiente

@@ -60,7 +60,7 @@ body {
 /* botones */
 
 #boton-volver{
-    margin-top: 170px;
+    margin-top: 180px;
     margin-left: 60px;
     background-color: rgb(62, 187, 62);
     color: white;
@@ -72,7 +72,7 @@ body {
 }
 
 #boton-volver:hover{
-    margin-top: 168px;
+    margin-top: 178px;
     margin-left: 50px; 
     background-color: rgb(68, 146, 68);
     color: white;
@@ -84,7 +84,7 @@ body {
 }
 
 #boton-siguiente{
-    margin-top: 170px;
+    margin-top: 180px;
     margin-right: 60px; 
     background-color: rgb(68, 78, 211);
     color: white;
@@ -96,7 +96,7 @@ body {
   }
   
   #boton-siguiente:hover{
-    margin-top: 168px;
+    margin-top: 178px;
     margin-right: 50px; 
     background-color: rgb(69, 74, 156);
     color: white;
@@ -117,11 +117,10 @@ body {
     }
 
 #pregunta1,
-#pregunta2,
-#pregunta3{
-    margin-top: 30px;
-text-align: center;
-  font-size: 22px;
+#pregunta2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 22px;
 }
     
 /* pregunta 1 */
@@ -129,10 +128,71 @@ text-align: center;
 
 #name,
 #age{
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 2px;
     width: 500px;
     height: 34px;
     font-size: 20px;
     padding-left: 20px;
+  }
+
+/* pregunta 3 */
+
+#pregunta3{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+#opciones-resp{
+    margin-top: 10px;
+    margin-left: 180px;
+}
+
+#boton-volver-preg3{
+    margin-top: 20px;
+    margin-left: 60px;
+    background-color: rgb(62, 187, 62);
+    color: white;
+    font-size: 18px;
+    border: rgb(62, 187, 62);
+    height: 45px;
+    width: 120px;
+    float: left;
+}
+
+#boton-volver-preg3:hover{
+    margin-top: 18px;
+    margin-left: 50px; 
+    background-color: rgb(68, 146, 68);
+    color: white;
+    font-size: 18.5px;
+    border: rgb(62, 187, 62);
+    height: 50px;
+    width: 140px;
+    float: left;
+}
+
+#boton-siguiente-preg3{
+    margin-top: 20px;
+    margin-right: 60px; 
+    background-color: rgb(68, 78, 211);
+    color: white;
+    font-size: 18px;
+    border: rgb(62, 187, 62);
+    height: 45px;
+    width: 120px;
+    float: right;
+  }
+  
+  #boton-siguiente-preg3:hover{
+    margin-top: 18px;
+    margin-right: 50px; 
+    background-color: rgb(69, 74, 156);
+    color: white;
+    font-size: 18.5px;
+    border: rgb(62, 187, 62);
+    height: 50px;
+    width: 140px;
+    float: right;
   }

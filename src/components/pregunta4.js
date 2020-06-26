@@ -28,7 +28,7 @@ const Pregunta4 = props => {
                                 <div className="col">
                                     <form id="loginForm">
 
-                                        <div className="card-group" id="pregunta3">
+                                        <div className="card-group" id="pregunta1">
                                             <label
                                                 className="col-md-4 col-xs-4"
                                                 for="marca">
