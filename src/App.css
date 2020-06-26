@@ -196,3 +196,12 @@ body {
     width: 140px;
     float: right;
   }
+
+
+  /* pregunta 4 */
+
+  #buena1,
+#niBuenaNiMala1,
+#mala1{
+padding-left: 15px;
+}

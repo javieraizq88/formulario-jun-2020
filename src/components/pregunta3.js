@@ -9,11 +9,13 @@ const Pregunta3 = props => {
     const history = useHistory();
     const { store, actions } = useContext(Context)
 
-
-
+    const obj = store.marca; 
+    const map = new Map(Object.entries(obj));
+    console.log(map); 
+    
     return (
 
-        <div >
+        <div>
             <div className="card-group ">
                 <div className=" card-body col-md-1 col-xs-1"></div>
                 <div className="card-body col-md-10 col-xs-10"
@@ -29,7 +31,7 @@ const Pregunta3 = props => {
                                         <div id="pregunta3">
                                             <label
                                             className="col-md-5 col-xs-5"
-                                                for="marca">
+                                                >
                                                 ¿Cuál de las siguientes marcas conoces?
                                         </label>
 
@@ -43,7 +45,7 @@ const Pregunta3 = props => {
                                                     name="nike"
                                                     id="nike"
                                                     onClick={(e) => { actions.cambiarCheckbox(e) }}
-                                                    value="nike"
+                                                    value=" "
                                                     
                                                 />
                                                 <label
@@ -63,7 +65,7 @@ const Pregunta3 = props => {
                                                     name="adidas"
                                                     id="adidas"
                                                     onClick={(e) => { actions.cambiarCheckbox(e) }}
-                                                    value="adidas"
+                                                    value=" "
                                                 />
                                                 <label
                                                     className="custom-control-label"
@@ -82,7 +84,7 @@ const Pregunta3 = props => {
                                                     name="puma"
                                                     id="puma"
                                                     onClick={(e) => { actions.cambiarCheckbox(e) }}
-                                                    value="puma"
+                                                    value=" "
                                                 />
                                                 <label
                                                     className="custom-control-label"
@@ -106,9 +108,7 @@ const Pregunta3 = props => {
                                             onClick={() => history.goBack()}
                                             className="btn btn-success float-left">
                                             Volver
-                                    </button>
-
-                                        {/* renderizado validando marcar por lo menos 1 opcion*/}
+                                    </button>                                  
                                         {
                                             store.marca  &&
                                             store.marca ?

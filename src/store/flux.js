@@ -4,6 +4,9 @@ const getState = ({ getStore, getAction, setStore }) => {
             name: "",
             age: "",
             marca: {},
+            nike: "",
+            adidas: "",
+            puma:""
         },
 
         actions: {
