@@ -48,8 +48,6 @@ const Pregunta1 = props => {
                                         </div>
                                     </form>
 
-
-
                                     {/* botones */}
                                     <div
                                         className=""
@@ -85,11 +83,12 @@ const Pregunta1 = props => {
 
                                         }
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                    </div> {/* fin de botones */}
+
+                                </div>{/* fin col */}
+                            </div>{/* fin row */}
+                        </div>{/* fin container */}
+                    </div>{/* fin contenido pregunta 3 */}
                 </div>
             </div>
         </div>

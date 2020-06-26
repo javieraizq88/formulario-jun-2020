@@ -10,6 +10,7 @@ const Pregunta3 = props => {
     const { store, actions } = useContext(Context)
 
 
+
     return (
 
         <div >
@@ -31,6 +32,7 @@ const Pregunta3 = props => {
                                                 for="marca">
                                                 ¿Cuál de las siguientes marcas conoces?
                                         </label>
+
                                             {/* opcion 1 = Nike */}
                                             <div
                                                 class="custom-control custom-switch"
@@ -40,7 +42,8 @@ const Pregunta3 = props => {
                                                     class="custom-control-input"
                                                     name="nike"
                                                     id="nike"
-                                                    onChange={(e) => { actions.handleChange(e) }}
+                                                    onClick={(e) => { actions.cambiarCheckbox(e) }}
+                                                    value="nike"
                                                 />
                                                 <label
                                                     class="custom-control-label"
@@ -58,7 +61,8 @@ const Pregunta3 = props => {
                                                     class="custom-control-input"
                                                     name="adidas"
                                                     id="adidas"
-                                                    onChange={(e) => { actions.handleChange(e) }}
+                                                    onClick={(e) => { actions.cambiarCheckbox(e) }}
+                                                    value="adidas"
                                                 />
                                                 <label
                                                     class="custom-control-label"
@@ -76,7 +80,8 @@ const Pregunta3 = props => {
                                                     class="custom-control-input"
                                                     name="puma"
                                                     id="puma"
-                                                    onChange={(e) => { actions.handleChange(e) }}
+                                                    onClick={(e) => { actions.cambiarCheckbox(e) }}
+                                                    value="puma"
                                                 />
                                                 <label
                                                     class="custom-control-label"
@@ -102,7 +107,7 @@ const Pregunta3 = props => {
                                             Volver
                                     </button>
 
-                                        {/* renderizado validando el ingreso de datos en nombre */}
+                                        {/* renderizado validando marcar por lo menos 1 opcion*/}
                                         {
                                             store.puma || store.nike || store.adidas &&
                                             store.puma || store.nike || store.adidas ?
