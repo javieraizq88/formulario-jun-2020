@@ -219,26 +219,43 @@ const Pregunta4 = props => {
 
                                         {/* validacion de elegir 1 opción*/}
                                         {
-                                            store.adidas !== " " &&
-                                                store.nike !== "" &&
-                                                store.puma !== " " ?
-                                                <Link
-                                                    to="/pregunta4">
-                                                    <button
-                                                        id="boton-finalizar"
-                                                        type="button"
-                                                        className="btn btn-success">
-                                                        Finalizar
-                                                    </button>
-                                                </Link>
-                                                :
 
+                                            store.adidas !== "" || store.nike !== "" || store.puma !== "" ?
+
+                                                 <Link
+                                                 to="/finalizar">
+                                                 <button
+                                                     id="boton-finalizar"
+                                                     type="button"
+                                                     className="btn btn-success">
+                                                     Finalizar
+                                                </button>
+                                             </Link>:
                                                 <button
                                                     id="boton-finalizar"
                                                     type="button"
                                                     className="btn btn-success disabled">
                                                     Finalizar
-                                                </button>
+                                                 </button>
+
+                                            // store.adidas.value !== null || store.nike.value !== null || store.puma.value !== null &&
+                                            // store.adidas.value !== null || store.nike.value !== null || store.puma.value !== null ?
+                                            //     <Link
+                                            //         to="/pregunta4">
+                                            //         <button
+                                            //             id="boton-finalizar"
+                                            //             type="button"
+                                            //             className="btn btn-success">
+                                            //             Finalizar
+                                            //         </button>
+                                            //     </Link>
+                                            //     :
+                                            //     <button
+                                            //         id="boton-finalizar"
+                                            //         type="button"
+                                            //         className="btn btn-success disabled">
+                                            //         Finalizar
+                                            //     </button>
 
                                         }
                                     </div> {/* fin de botones */}

@@ -242,17 +242,17 @@ body {
     margin-bottom: 25px;
  }
 
-
  #boton-volver-home{
     margin-left: 500px;
 }
+
 #boton-volver-home:hover{
     margin-left: 495px;
 }
     
 #boton-volver-home button{
     margin-top: 50px;
-    background: brown;
+    background: rgb(214, 50, 50);
     color: white;
     font-size: 20px;
     border: 0 ;
