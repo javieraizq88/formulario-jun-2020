@@ -24,9 +24,8 @@ const Pregunta4a = ({ marca }) => {
                                 name="nike"
                                 id="buena"
                                 value="buena"
-                                onClick={(e) => { actions.handleChange(e) }} 
-                                checked
-                                />
+                                onClick={(e) => { actions.handleChange(e) }}
+                            />
                             <label
                                 className="form-check-label"
                                 for="buena">
@@ -71,7 +70,7 @@ const Pregunta4a = ({ marca }) => {
             {
                 marca === "Adidas" &&
                     marca === "Adidas" ?
-                    <div  id="borde-respuestas" className="col-md-5 col-xs-5">
+                    <div id="borde-respuestas" className="col-md-5 col-xs-5">
                         <div id="buena1" className="form-check form-check-inline">
                             <input
                                 className="form-check-input"
@@ -79,8 +78,8 @@ const Pregunta4a = ({ marca }) => {
                                 name="adidas"
                                 id="buena"
                                 value="buena"
-                                onClick={(e) => { actions.handleChange(e) }} 
-                                checked/>
+                                onClick={(e) => { actions.handleChange(e) }}
+                            />
                             <label
                                 className="form-check-label"
                                 for="buena">
@@ -124,8 +123,8 @@ const Pregunta4a = ({ marca }) => {
             {
                 marca === "Puma" &&
                     marca === "Puma" ?
-                    <div  id="borde-respuestas" className="col-md-5 col-xs-5">
-                        <div  id="buena1" className="form-check form-check-inline" >
+                    <div id="borde-respuestas" className="col-md-5 col-xs-5">
+                        <div id="buena1" className="form-check form-check-inline" >
                             <input
                                 className="form-check-input"
                                 type="radio"
@@ -133,7 +132,7 @@ const Pregunta4a = ({ marca }) => {
                                 id="buena"
                                 value="buena"
                                 onClick={(e) => { actions.handleChange(e) }}
-                                 />
+                            />
                             <label
                                 className="form-check-label"
                                 for="buena">
@@ -218,9 +217,13 @@ const Pregunta4 = props => {
                                             Volver
                                     </button>
 
-                                        {/* validando ya que es por radio y obliga a marcar una opcion*/}
+                                        {/* validacion de elegir 1 opción*/}
+                                        {
+                                            store.adidas !== " " &&
+                                                store.nike !== "" &&
+                                                store.puma !== " " ?
                                                 <Link
-                                                    to="/finalizar">
+                                                    to="/pregunta4">
                                                     <button
                                                         id="boton-finalizar"
                                                         type="button"
@@ -228,6 +231,16 @@ const Pregunta4 = props => {
                                                         Finalizar
                                                     </button>
                                                 </Link>
+                                                :
+
+                                                <button
+                                                    id="boton-finalizar"
+                                                    type="button"
+                                                    className="btn btn-success disabled">
+                                                    Finalizar
+                                                </button>
+
+                                        }
                                     </div> {/* fin de botones */}
 
                                 </div>{/* fin col */}

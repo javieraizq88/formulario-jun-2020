@@ -28,7 +28,9 @@ const Pregunta3 = props => {
                                             <label
                                                 className="col-md-5 col-xs-5">
                                                 ¿Cuál de las siguientes marcas conoces?
-                                        </label>
+                                            <br/>
+                                            <small>(Puedes elegir una o más opciones)</small>
+                                            </label>
 
                                             {/* opcion 1 = Nike */}
                                             <div
@@ -101,6 +103,8 @@ const Pregunta3 = props => {
                                             className="btn btn-success float-left">
                                             Volver
                                     </button>
+
+                                    {/* validacion de elegir por lo menos 1 opcion */}
                                         {
                                             store.marca.Adidas !== "adidas" &&
                                             store.marca.Nike !== "Nike"  &&
