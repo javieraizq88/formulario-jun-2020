@@ -17,14 +17,15 @@ const Pregunta4a = ({ marca }) => {
                 marca === "Nike" &&
                     marca === "Nike" ?
                     <div id="borde-respuestas" className="col-md-5 col-xs-5">
+
                         <div id="buena1" className="form-check form-check-inline">
                             <input
-                                className="form-check-input"
+                                className="form-check-input "
                                 type="radio"
                                 name="nike"
                                 id="buena"
                                 value="buena"
-                                onClick={(e) => { actions.handleChange(e) }}
+                                onClick={(e) => { actions.cambiarRespuesta(e) }}
                             />
                             <label
                                 className="form-check-label"
@@ -40,7 +41,8 @@ const Pregunta4a = ({ marca }) => {
                                 name="nike"
                                 id="niBuenaNiMala"
                                 value="Ni buena ni mala"
-                                onClick={(e) => { actions.handleChange(e) }} />
+                                onClick={(e) => { actions.cambiarRespuesta(e) }}
+                            />
                             <label
                                 className="form-check-label"
                                 for="niBuenaNiMala">
@@ -49,18 +51,20 @@ const Pregunta4a = ({ marca }) => {
                         </div>
                         <div
                             id="mala1" className="form-check form-check-inline">
+
                             <input
                                 className="form-check-input"
                                 type="radio"
                                 name="nike"
                                 id="mala"
                                 value="mala"
-                                onClick={(e) => { actions.handleChange(e) }} />
+                                onClick={(e) => { actions.cambiarRespuesta(e) }}
+                            />
                             <label
                                 className="form-check-label"
                                 for="mala">
                                 Mala
-                                </label>
+                            </label>
                         </div>
                     </div>
                     :
@@ -68,8 +72,7 @@ const Pregunta4a = ({ marca }) => {
             }
 
             {
-                marca === "Adidas" &&
-                    marca === "Adidas" ?
+                marca === "Adidas" ?
                     <div id="borde-respuestas" className="col-md-5 col-xs-5">
                         <div id="buena1" className="form-check form-check-inline">
                             <input
@@ -78,8 +81,7 @@ const Pregunta4a = ({ marca }) => {
                                 name="adidas"
                                 id="buena"
                                 value="buena"
-                                onClick={(e) => { actions.handleChange(e) }}
-                            />
+                                onClick={(e) => { actions.cambiarRespuesta(e) }} />
                             <label
                                 className="form-check-label"
                                 for="buena">
@@ -93,21 +95,21 @@ const Pregunta4a = ({ marca }) => {
                                 name="adidas"
                                 id="niBuenaNiMala"
                                 value="Ni buena ni mala"
-                                onClick={(e) => { actions.handleChange(e) }} />
+                                onClick={(e) => { actions.cambiarRespuesta(e) }} />
                             <label
                                 className="form-check-label"
                                 for="niBuenaNiMala">
                                 Ni buena ni mala
                             </label>
                         </div>
-                        <div id="mala" className="form-check form-check-inline">
+                        <div id="mala1" className="form-check form-check-inline">
                             <input
                                 className="form-check-input"
                                 type="radio"
                                 name="adidas"
                                 id="mala"
                                 value="mala"
-                                onClick={(e) => { actions.handleChange(e) }} />
+                                onClick={(e) => { actions.cambiarRespuesta(e) }} />
                             <label
                                 className="form-check-label"
                                 for="mala">
@@ -131,7 +133,7 @@ const Pregunta4a = ({ marca }) => {
                                 name="puma"
                                 id="buena"
                                 value="buena"
-                                onClick={(e) => { actions.handleChange(e) }}
+                                onClick={(e) => { actions.cambiarRespuesta(e) }}
                             />
                             <label
                                 className="form-check-label"
@@ -146,7 +148,7 @@ const Pregunta4a = ({ marca }) => {
                                 name="puma"
                                 id="niBuenaNiMala"
                                 value="Ni buena ni mala"
-                                onClick={(e) => { actions.handleChange(e) }} />
+                                onClick={(e) => { actions.cambiarRespuesta(e) }} />
                             <label
                                 className="form-check-label"
                                 for="niBuenaNiMala">
@@ -160,7 +162,7 @@ const Pregunta4a = ({ marca }) => {
                                 name="puma"
                                 id="mala"
                                 value="mala"
-                                onClick={(e) => { actions.handleChange(e) }} />
+                                onClick={(e) => { actions.cambiarRespuesta(e) }} />
                             <label
                                 className="form-check-label"
                                 for="mala">
@@ -181,6 +183,54 @@ const Pregunta4 = props => {
     const { store } = useContext(Context)
     const obj = store.marca;
     const map = Object.keys(obj);
+    let finalizar = 0
+
+    if (store.adidas !== "" && store.nike !== "" && store.puma === "") {
+        finalizar = 2
+    } else if (store.adidas !== "" && store.nike === "" && store.puma !== "") {
+        finalizar = 2
+    } else if (store.adidas === "" && store.nike !== "" && store.puma !== "") {
+        finalizar = 2
+    } else if (store.adidas === "" && store.nike !== "" && store.puma !== "") {
+        finalizar = 2
+    } else if (store.adidas !== "" && store.nike !== "" && store.puma !== "") {
+        finalizar = 3
+    } else if (store.adidas !== "" && store.nike === "" && store.puma === "") {
+        finalizar = 1
+    } else if (store.adidas === "" && store.nike !== "" && store.puma === "") {
+        finalizar = 1
+    } else if (store.adidas === "" && store.nike === "" && store.puma !== "") {
+        finalizar.push = 1
+    } else (finalizar = 0)
+
+
+    // if (store.adidas !== "" && store.nike !== "" && store.puma !== "" ) {
+    //     finalizar = 3
+    //     if (store.adidas === "" && store.nike !== "" && store.puma !== "" ) {
+    //         finalizar = 2
+    //         if (store.adidas === "" && store.nike !== "" && store.puma !== "" ) {
+    //             finalizar = 2
+    //             if ( store.adidas !== "" && store.nike === "" && store.puma !== "" ){
+    //                 finalizar = 2
+    //                 if ( store.adidas !== "" && store.nike !== "" && store.puma === "") {
+    //                     finalizar = 2
+    //                     if (store.adidas !== "" && store.nike === "" && store.puma === ""){
+    //                         finalizar = 1
+    //                         if (store.adidas === "" && store.nike !== "" && store.puma === ""){
+    //                             finalizar = 1
+    //                             if (store.adidas === "" && store.nike === "" && store.puma !== ""){
+    //                                 finalizar = 1
+    //                             }else ( finalizar = 0)
+    //                         } else ( finalizar = 0)
+    //                     }  else ( finalizar = 0)
+    //                 }else ( finalizar = 0)
+    //             }else ( finalizar = 0)
+    //         }else ( finalizar = 0)
+    //     }else ( finalizar = 0)
+    // }      else ( finalizar = 0)
+
+
+    console.log(finalizar)
 
     return (
         <div>
@@ -220,23 +270,23 @@ const Pregunta4 = props => {
                                         {/* validacion de elegir 1 opción*/}
                                         {
 
-                                            store.adidas !== "" || store.nike !== "" || store.puma !== "" ?
-
-                                                 <Link
-                                                 to="/finalizar">
-                                                 <button
-                                                     id="boton-finalizar"
-                                                     type="button"
-                                                     className="btn btn-success">
-                                                     Finalizar
+                                            Object.keys(store.marca).length === Object.keys(store.respuesta).length ?
+                                                <Link
+                                                    to="/finalizar">
+                                                    <button
+                                                        id="boton-finalizar"
+                                                        type="button"
+                                                        className="btn btn-success">
+                                                        Finalizar
                                                 </button>
-                                             </Link>:
+                                                </Link>
+                                                :
                                                 <button
                                                     id="boton-finalizar"
                                                     type="button"
                                                     className="btn btn-success disabled">
                                                     Finalizar
-                                                 </button>
+                                                </button>
 
                                             // store.adidas.value !== null || store.nike.value !== null || store.puma.value !== null &&
                                             // store.adidas.value !== null || store.nike.value !== null || store.puma.value !== null ?

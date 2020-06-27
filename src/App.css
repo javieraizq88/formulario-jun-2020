@@ -15,7 +15,7 @@ body {
   }
 
 #titulo{
-    margin-left: 150px;
+  margin-left: 150px; 
  }
 
 #logo-cadem{
@@ -200,10 +200,11 @@ body {
 
   /* pregunta 4 */
 
-#buena1,
-#niBuenaNiMala1,
-#mala1{
-    padding-left: 15px;
+
+#buena1 input,
+#niBuenaNiMala1 input,
+#mala1 input{
+    zoom: 1.4;
 }
 
 #boton-finalizar{
@@ -233,6 +234,11 @@ body {
  #borde-respuestas{
     background-color: rgb(233, 230, 230);
  }
+
+ #label-mala {
+   background-color: brown;
+ }
+
 
  /* finalizar */
 
