@@ -108,7 +108,7 @@ const Pregunta3 = props => {
                                         {
                                             store.marca.Adidas !== "adidas" &&
                                             store.marca.Nike !== "Nike"  &&
-                                            store.marca.Puma !== "puma"?
+                                            store.marca.Puma !== "puma" ?
 
                                                 <button
                                                     id="boton-siguiente-preg3"

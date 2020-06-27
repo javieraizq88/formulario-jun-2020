@@ -17,7 +17,6 @@ const getState = ({ getStore, getAction, setStore }) => {
 
             cambiarCheckbox: (e) => {
                 const store = getStore()
-
                 if (store.marca.hasOwnProperty(e.target.name)) {
                     const aux = { ...store.marca }
                     delete aux[e.target.name]
@@ -31,7 +30,6 @@ const getState = ({ getStore, getAction, setStore }) => {
 
             cambiarRespuesta: (e) => {
                 const store = getStore()
-
                 if (store.respuesta.hasOwnProperty(e.target.name)) {
                     const aux = { ...store.respuesta }
                     delete aux[e.target.name]
@@ -43,7 +41,7 @@ const getState = ({ getStore, getAction, setStore }) => {
             }
 
 
-        } //almacena fx
+        } 
     }
 }
 

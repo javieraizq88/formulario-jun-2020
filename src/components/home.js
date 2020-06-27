@@ -1,8 +1,8 @@
 import React from 'react';
 import '../App.css';
-import Header from '../components/header';
+import Header from './header';
 import { Link } from 'react-router-dom';
-// Resposive 
+
 const Home = props => {
 
     return (

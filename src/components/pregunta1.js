@@ -78,7 +78,6 @@ const Pregunta1 = props => {
                                                     className="btn btn-success disabled">
                                                     Siguiente
                                                 </button>
-
                                         }
 
                                     </div> {/* fin de botones */}

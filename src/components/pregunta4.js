@@ -183,54 +183,6 @@ const Pregunta4 = props => {
     const { store } = useContext(Context)
     const obj = store.marca;
     const map = Object.keys(obj);
-    let finalizar = 0
-
-    if (store.adidas !== "" && store.nike !== "" && store.puma === "") {
-        finalizar = 2
-    } else if (store.adidas !== "" && store.nike === "" && store.puma !== "") {
-        finalizar = 2
-    } else if (store.adidas === "" && store.nike !== "" && store.puma !== "") {
-        finalizar = 2
-    } else if (store.adidas === "" && store.nike !== "" && store.puma !== "") {
-        finalizar = 2
-    } else if (store.adidas !== "" && store.nike !== "" && store.puma !== "") {
-        finalizar = 3
-    } else if (store.adidas !== "" && store.nike === "" && store.puma === "") {
-        finalizar = 1
-    } else if (store.adidas === "" && store.nike !== "" && store.puma === "") {
-        finalizar = 1
-    } else if (store.adidas === "" && store.nike === "" && store.puma !== "") {
-        finalizar.push = 1
-    } else (finalizar = 0)
-
-
-    // if (store.adidas !== "" && store.nike !== "" && store.puma !== "" ) {
-    //     finalizar = 3
-    //     if (store.adidas === "" && store.nike !== "" && store.puma !== "" ) {
-    //         finalizar = 2
-    //         if (store.adidas === "" && store.nike !== "" && store.puma !== "" ) {
-    //             finalizar = 2
-    //             if ( store.adidas !== "" && store.nike === "" && store.puma !== "" ){
-    //                 finalizar = 2
-    //                 if ( store.adidas !== "" && store.nike !== "" && store.puma === "") {
-    //                     finalizar = 2
-    //                     if (store.adidas !== "" && store.nike === "" && store.puma === ""){
-    //                         finalizar = 1
-    //                         if (store.adidas === "" && store.nike !== "" && store.puma === ""){
-    //                             finalizar = 1
-    //                             if (store.adidas === "" && store.nike === "" && store.puma !== ""){
-    //                                 finalizar = 1
-    //                             }else ( finalizar = 0)
-    //                         } else ( finalizar = 0)
-    //                     }  else ( finalizar = 0)
-    //                 }else ( finalizar = 0)
-    //             }else ( finalizar = 0)
-    //         }else ( finalizar = 0)
-    //     }else ( finalizar = 0)
-    // }      else ( finalizar = 0)
-
-
-    console.log(finalizar)
 
     return (
         <div>
@@ -267,9 +219,8 @@ const Pregunta4 = props => {
                                             Volver
                                     </button>
 
-                                        {/* validacion de elegir 1 opción*/}
+                                        {/* validacion de elegir 1 opción */}
                                         {
-
                                             Object.keys(store.marca).length === Object.keys(store.respuesta).length ?
                                                 <Link
                                                     to="/finalizar">
@@ -287,25 +238,6 @@ const Pregunta4 = props => {
                                                     className="btn btn-success disabled">
                                                     Finalizar
                                                 </button>
-
-                                            // store.adidas.value !== null || store.nike.value !== null || store.puma.value !== null &&
-                                            // store.adidas.value !== null || store.nike.value !== null || store.puma.value !== null ?
-                                            //     <Link
-                                            //         to="/pregunta4">
-                                            //         <button
-                                            //             id="boton-finalizar"
-                                            //             type="button"
-                                            //             className="btn btn-success">
-                                            //             Finalizar
-                                            //         </button>
-                                            //     </Link>
-                                            //     :
-                                            //     <button
-                                            //         id="boton-finalizar"
-                                            //         type="button"
-                                            //         className="btn btn-success disabled">
-                                            //         Finalizar
-                                            //     </button>
 
                                         }
                                     </div> {/* fin de botones */}
