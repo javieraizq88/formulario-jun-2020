@@ -14,9 +14,9 @@ const Pregunta4a = ({ marca }) => {
                 ¿Qué te parece la marca {marca}?
             </label>
             {
-                marca === "nike" &&
-                    marca === "nike" ?
-                    <div className="col-md-5 col-xs-5">
+                marca === "Nike" &&
+                    marca === "Nike" ?
+                    <div id="borde-respuestas" className="col-md-5 col-xs-5">
                         <div id="buena1" className="form-check form-check-inline">
                             <input
                                 className="form-check-input"
@@ -24,7 +24,9 @@ const Pregunta4a = ({ marca }) => {
                                 name="nike"
                                 id="buena"
                                 value="buena"
-                                onClick={(e) => { actions.handleChange(e) }} />
+                                onClick={(e) => { actions.handleChange(e) }} 
+                                checked
+                                />
                             <label
                                 className="form-check-label"
                                 for="buena">
@@ -67,9 +69,9 @@ const Pregunta4a = ({ marca }) => {
             }
 
             {
-                marca === "adidas" &&
-                    marca === "adidas" ?
-                    <div className="col-md-5 col-xs-5">
+                marca === "Adidas" &&
+                    marca === "Adidas" ?
+                    <div  id="borde-respuestas" className="col-md-5 col-xs-5">
                         <div id="buena1" className="form-check form-check-inline">
                             <input
                                 className="form-check-input"
@@ -77,7 +79,8 @@ const Pregunta4a = ({ marca }) => {
                                 name="adidas"
                                 id="buena"
                                 value="buena"
-                                onClick={(e) => { actions.handleChange(e) }} />
+                                onClick={(e) => { actions.handleChange(e) }} 
+                                checked/>
                             <label
                                 className="form-check-label"
                                 for="buena">
@@ -119,17 +122,18 @@ const Pregunta4a = ({ marca }) => {
 
 
             {
-                marca === "puma" &&
-                    marca === "puma" ?
-                    <div className="col-md-5 col-xs-5">
-                        <div id="buena1" className="form-check form-check-inline">
+                marca === "Puma" &&
+                    marca === "Puma" ?
+                    <div  id="borde-respuestas" className="col-md-5 col-xs-5">
+                        <div  id="buena1" className="form-check form-check-inline" >
                             <input
                                 className="form-check-input"
                                 type="radio"
                                 name="puma"
                                 id="buena"
                                 value="buena"
-                                onClick={(e) => { actions.handleChange(e) }} />
+                                onClick={(e) => { actions.handleChange(e) }}
+                                 />
                             <label
                                 className="form-check-label"
                                 for="buena">
@@ -224,8 +228,6 @@ const Pregunta4 = props => {
                                                         Finalizar
                                                     </button>
                                                 </Link>
-      
-
                                     </div> {/* fin de botones */}
 
                                 </div>{/* fin col */}

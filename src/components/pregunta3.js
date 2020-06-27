@@ -9,7 +9,6 @@ const Pregunta3 = props => {
     const history = useHistory();
     const { store, actions } = useContext(Context)
 
-    
     return (
 
         <div>
@@ -27,23 +26,21 @@ const Pregunta3 = props => {
                                     <form id="loginForm">
                                         <div id="pregunta3">
                                             <label
-                                            className="col-md-5 col-xs-5"
-                                                >
+                                                className="col-md-5 col-xs-5">
                                                 ¿Cuál de las siguientes marcas conoces?
                                         </label>
 
                                             {/* opcion 1 = Nike */}
                                             <div
-                                                className="custom-control custom-switch" 
+                                                className="custom-control custom-switch"
                                                 id="opciones-resp">
                                                 <input
                                                     type="checkbox"
                                                     className="custom-control-input"
-                                                    name="nike"
+                                                    name="Nike"
                                                     id="nike"
                                                     onClick={(e) => { actions.cambiarCheckbox(e) }}
-                                                    value=" "
-                                                    
+                                                    value="Nike"
                                                 />
                                                 <label
                                                     className="custom-control-label"
@@ -59,10 +56,10 @@ const Pregunta3 = props => {
                                                 <input
                                                     type="checkbox"
                                                     className="custom-control-input"
-                                                    name="adidas"
+                                                    name="Adidas"
                                                     id="adidas"
                                                     onClick={(e) => { actions.cambiarCheckbox(e) }}
-                                                    value=" "
+                                                    value="adidas"
                                                 />
                                                 <label
                                                     className="custom-control-label"
@@ -78,10 +75,10 @@ const Pregunta3 = props => {
                                                 <input
                                                     type="checkbox"
                                                     className="custom-control-input"
-                                                    name="puma"
+                                                    name="Puma"
                                                     id="puma"
                                                     onClick={(e) => { actions.cambiarCheckbox(e) }}
-                                                    value=" "
+                                                    value="puma"
                                                 />
                                                 <label
                                                     className="custom-control-label"
@@ -89,8 +86,6 @@ const Pregunta3 = props => {
                                                     Puma
                                                 </label>
                                             </div>
-
-
                                             <br />
                                         </div>
                                     </form> {/* fin del formulario */}
@@ -105,10 +100,19 @@ const Pregunta3 = props => {
                                             onClick={() => history.goBack()}
                                             className="btn btn-success float-left">
                                             Volver
-                                    </button>                                  
+                                    </button>
                                         {
-                                            store.marca  &&
-                                            store.marca ?
+                                            store.marca.Adidas !== "adidas" &&
+                                            store.marca.Nike !== "Nike"  &&
+                                            store.marca.Puma !== "puma"?
+
+                                                <button
+                                                    id="boton-siguiente-preg3"
+                                                    type="button"
+                                                    className="btn btn-success disabled">
+                                                    Siguiente
+                                                </button>
+                                                :
                                                 <Link
                                                     to="/pregunta4">
                                                     <button
@@ -116,15 +120,8 @@ const Pregunta3 = props => {
                                                         type="button"
                                                         className="btn btn-success">
                                                         Siguiente
-                                                    </button>
-                                                </Link>
-                                                :
-                                                <button
-                                                    id="boton-siguiente-preg3"
-                                                    type="button"
-                                                    className="btn btn-success disabled">
-                                                    Siguiente
                                                 </button>
+                                                </Link>
                                         }
 
                                     </div> {/* fin de botones */}
