@@ -79,7 +79,7 @@ const Pregunta2 = props => {
                                                 </button>
                                         }
 
-                                    </div> {/* fin de botones */}
+                                    </div> {/* fin  botones */}
 
                                 </div>{/* fin col */}
                             </div>{/* fin row */}
