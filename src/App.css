@@ -200,8 +200,32 @@ body {
 
   /* pregunta 4 */
 
-  #buena1,
+#buena1,
 #niBuenaNiMala1,
 #mala1{
-padding-left: 15px;
+    padding-left: 15px;
 }
+
+#boton-finalizar{
+    margin-top: 20px;
+    margin-right: 60px; 
+    background-color: rgb(231, 13, 13);
+    color: white;
+    font-size: 18px;
+    border: rgb(62, 187, 62);
+    height: 45px;
+    width: 120px;
+    float: right;
+}
+
+#boton-finalizar:hover{
+    margin-top: 18px;
+    margin-right: 50px; 
+    background-color: rgb(175, 43, 43);
+    color: white;
+    font-size: 18.5px;
+    border: rgb(62, 187, 62);
+    height: 50px;
+    width: 140px;
+    float: right;
+  }

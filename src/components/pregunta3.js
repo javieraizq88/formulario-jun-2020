@@ -9,9 +9,6 @@ const Pregunta3 = props => {
     const history = useHistory();
     const { store, actions } = useContext(Context)
 
-    const obj = store.marca; 
-    const map = new Map(Object.entries(obj));
-    console.log(map); 
     
     return (
 

@@ -19,7 +19,6 @@ const getState = ({ getStore, getAction, setStore }) => {
 
             cambiarCheckbox: (e) => {
                 const store = getStore()
-                console.log ( store.marca.hasOwnProperty(e.target.name) )
                 if (store.marca.hasOwnProperty(e.target.name)) {
                     const aux = {...store.marca}
                     delete aux[ e.target.name ]

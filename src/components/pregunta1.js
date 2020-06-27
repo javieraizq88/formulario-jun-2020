@@ -4,8 +4,6 @@ import { useHistory, Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import Header from "./header";
 
-// resposive
-
 const Pregunta1 = props => {
     const history = useHistory();
     const { store, actions } = useContext(Context)
