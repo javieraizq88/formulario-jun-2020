@@ -6,25 +6,9 @@ import { Link } from "react-router-dom"
 const Finalizar = props => {
     const { store , actions } = useContext(Context)
 
-    console.log(store.name)
-    console.log(store.age)
-if (store.nike !== "") {
-    console.log("Nike = " + store.nike)
-} else {
-    console.log("Nike no fue elegida")
-}
-
-if (store.puma !== "") {
-    console.log("Puma = " + store.puma)
-} else {
-    console.log("Puma no fue elegida")
-}
-
-if (store.adidas !== "") {
-    console.log("Adidas = " + store.adidas)
-} else {
-    console.log("Adidas no fue elegida")
-}
+    console.log("nombre: " + store.name)
+    console.log("edad: " + store.age)
+    console.log(store.respuesta)
 
 return (
     <div >
