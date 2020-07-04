@@ -29,7 +29,7 @@ const Pregunta4a = ({ marca }) => {
                             />
                             <label
                                 className="form-check-label"
-                                for="buena">
+                                htmlFor="buena">
                                 Buena
                             </label>
                         </div>
@@ -45,7 +45,7 @@ const Pregunta4a = ({ marca }) => {
                             />
                             <label
                                 className="form-check-label"
-                                for="niBuenaNiMala">
+                                htmlFor="niBuenaNiMala">
                                 Ni buena ni mala
                             </label>
                         </div>
@@ -62,7 +62,7 @@ const Pregunta4a = ({ marca }) => {
                             />
                             <label
                                 className="form-check-label"
-                                for="mala">
+                                htmlFor="mala">
                                 Mala
                             </label>
                         </div>
@@ -84,7 +84,7 @@ const Pregunta4a = ({ marca }) => {
                                 onClick={(e) => { actions.cambiarRespuesta(e) }} />
                             <label
                                 className="form-check-label"
-                                for="buena">
+                                htmlFor="buena">
                                 Buena
                             </label>
                         </div>
@@ -98,7 +98,7 @@ const Pregunta4a = ({ marca }) => {
                                 onClick={(e) => { actions.cambiarRespuesta(e) }} />
                             <label
                                 className="form-check-label"
-                                for="niBuenaNiMala">
+                                htmlFor="niBuenaNiMala">
                                 Ni buena ni mala
                             </label>
                         </div>
@@ -112,7 +112,7 @@ const Pregunta4a = ({ marca }) => {
                                 onClick={(e) => { actions.cambiarRespuesta(e) }} />
                             <label
                                 className="form-check-label"
-                                for="mala">
+                                htmlFor="mala">
                                 Mala
                             </label>
                         </div>
@@ -137,7 +137,7 @@ const Pregunta4a = ({ marca }) => {
                             />
                             <label
                                 className="form-check-label"
-                                for="buena">
+                                htmlFor="buena">
                                 Buena
                             </label>
                         </div>
@@ -151,7 +151,7 @@ const Pregunta4a = ({ marca }) => {
                                 onClick={(e) => { actions.cambiarRespuesta(e) }} />
                             <label
                                 className="form-check-label"
-                                for="niBuenaNiMala">
+                                htmlFor="niBuenaNiMala">
                                 Ni buena ni mala
                             </label>
                         </div>
@@ -165,7 +165,7 @@ const Pregunta4a = ({ marca }) => {
                                 onClick={(e) => { actions.cambiarRespuesta(e) }} />
                             <label
                                 className="form-check-label"
-                                for="mala">
+                                htmlFor="mala">
                                 Mala
                             </label>
                         </div>

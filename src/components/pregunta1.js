@@ -30,7 +30,7 @@ const Pregunta1 = props => {
                                             <label
                                                 className="col-md-4 col-xs-4"
                                                 id="pregunta1"
-                                                for="nombre">
+                                                htmlFor="nombre">
                                                 ¿Cuál es tu nombre?
                                             </label>
                                             <input

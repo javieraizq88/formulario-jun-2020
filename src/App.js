@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import injectContext from './store/appContext';
-import Home from './views/home';
 import Pregunta1 from './components/pregunta1';
 import Pregunta2 from './components/pregunta2';
 import Pregunta3 from './components/pregunta3';
 import Pregunta4 from './components/pregunta4';
 import Finalizar from './components/finalizar';
+import Home from './components/home';
 
 const App = props => {
   return (

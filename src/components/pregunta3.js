@@ -46,7 +46,7 @@ const Pregunta3 = props => {
                                                 />
                                                 <label
                                                     className="custom-control-label"
-                                                    for="nike">
+                                                    htmlFor="nike">
                                                     Nike
                                                 </label>
                                             </div>
@@ -65,7 +65,7 @@ const Pregunta3 = props => {
                                                 />
                                                 <label
                                                     className="custom-control-label"
-                                                    for="adidas">
+                                                    htmlFor="adidas">
                                                     Adidas
                                                 </label>
                                             </div>
@@ -84,7 +84,7 @@ const Pregunta3 = props => {
                                                 />
                                                 <label
                                                     className="custom-control-label"
-                                                    for="puma">
+                                                    htmlFor="puma">
                                                     Puma
                                                 </label>
                                             </div>

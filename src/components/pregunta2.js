@@ -29,7 +29,7 @@ const Pregunta2 = props => {
                                             <label
                                                 className="col-md-4 col-xs-4"
                                                 id="pregunta1"
-                                                for="nombre">
+                                                htmlFor="nombre">
                                                 ¿Qué edad tienes {store.name}?
                                         </label>
                                             <input
