@@ -8,14 +8,17 @@ const Pregunta4a = ({ marca }) => {
     const { actions } = useContext(Context)
 
     return (
+        
         <div className="card-group" id="pregunta3">
             <label
                 className="col-md-5 col-xs-5">
                 ¿Qué te parece la marca {marca}?
             </label>
             {
-                marca === "Nike" &&
-                    marca === "Nike" ?
+                marca === "Nike"
+                //  &&
+                //     marca === "Nike" 
+                    ?
                     <div id="borde-respuestas" className="col-md-5 col-xs-5">
 
                         <div id="buena1" className="form-check form-check-inline">
@@ -123,8 +126,10 @@ const Pregunta4a = ({ marca }) => {
 
 
             {
-                marca === "Puma" &&
-                    marca === "Puma" ?
+                marca === "Puma" 
+                // &&
+                //     marca === "Puma" 
+                    ?
                     <div id="borde-respuestas" className="col-md-5 col-xs-5">
                         <div id="buena1" className="form-check form-check-inline" >
                             <input

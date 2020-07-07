@@ -42,7 +42,7 @@ const Pregunta3 = props => {
                                                     name="Nike"
                                                     id="nike"
                                                     onClick={(e) => { actions.cambiarCheckbox(e) }}
-                                                    value="Nike"
+                                                    value={"Nike"}
                                                 />
                                                 <label
                                                     className="custom-control-label"
