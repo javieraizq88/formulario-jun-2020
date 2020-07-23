@@ -8,12 +8,14 @@ import Pregunta3 from './components/pregunta3';
 import Pregunta4 from './components/pregunta4';
 import Finalizar from './components/finalizar';
 import Home from './components/home';
+import SumArr from './components/test';
 
 const App = props => {
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/test" component={SumArr} />
         <Route exact path="/pregunta1" component={Pregunta1} />
         <Route exact path="/pregunta2" component={Pregunta2} />
         <Route exact path="/pregunta3" component={Pregunta3} />
